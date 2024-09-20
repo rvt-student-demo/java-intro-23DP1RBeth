@@ -5,29 +5,26 @@ public class App
 {
     public static void main( String[] args )
     {
-        // Make your Hello World programm!
-
-        // System.out.println("Hello Java!"); System.out.println("Hello Java!");
-        // System.out.println("Hello Java!"); System.out.println("Hello Java!");
-      
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println(". . .");
-        String name = scanner.nextLine();
-
-        System.out.println(". . .");
-        String lastname = scanner.nextLine();
-
-        System.out.println(". . .");
-        String group = scanner.nextLine();
-  
-        System.out.println(". . .");
+        System.out.println("Give the first number:");
+        int first = Integer.valueOf(scanner.nextLine());
 
 
-        System.out.println("Students: " + " " +  name  + " " + lastname +" " + group);
+        System.out.println("Give the second number:");
+        int second = Integer.valueOf(scanner.nextLine());
 
+        int result1 = first * second;
+        System.out.println(first + " * " + second + " = " + result1);
 
+        int result2 = first + second;
+        System.out.println(first + " + " + second + " = " + result2);
 
-    
+        int result3 = first - second;
+        System.out.println(first + " - " + second + " = " + result3);
+
+        double result4 = first / second;
+        System.out.println(first + " / " + second + " = " + result4);
+        
     }
 }
