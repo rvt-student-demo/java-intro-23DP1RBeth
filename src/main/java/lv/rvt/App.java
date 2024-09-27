@@ -37,5 +37,14 @@ public class App
         System.out.println("Grade: 5");
      }
 
+     else if (box > 100) {
+        System.out.println("incredible!");
+     }
+
+     else if (box < 0) {
+        System.out.println("impossible!");
+     }
+
+
     }
 }
