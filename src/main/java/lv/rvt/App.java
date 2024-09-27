@@ -5,26 +5,52 @@ public class App
 {
     public static void main( String[] args )
     {
+        // int value = Integer.valueOf(scanner.nextLine());
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Give the first number:");
-        int first = Integer.valueOf(scanner.nextLine());
+    // mana programma
 
+     int number = 49;
+     int number_2 = 59;
+     int number_3 = 69;
+     int number_4 = 79;
+     int number_5 = 89;
+     int number_6 = 100;
 
-        System.out.println("Give the second number:");
-        int second = Integer.valueOf(scanner.nextLine());
+     System.out.println("uzraksti cik tev: ");
+     int box = Integer.valueOf(scanner.nextLine());
 
-        int result1 = first * second;
-        System.out.println(first + " * " + second + " = " + result1);
+     if (box < number) {
+        System.out.println("Grade: failed");
+     }
 
-        int result2 = first + second;
-        System.out.println(first + " + " + second + " = " + result2);
+     else if (box < number_2) {
 
-        int result3 = first - second;
-        System.out.println(first + " - " + second + " = " + result3);
+        System.out.println("Grade: 1");
+     }
 
-        double result4 = first / second;
-        System.out.println(first + " / " + second + " = " + result4);
-        
+     else if (box < number_3) {
+
+        System.out.println("Grade: 2");
+
+     }
+
+     else if (box < number_4) {
+
+        System.out.println("Grade: 3");
+
+     }
+     else if (box < number_5) {
+
+        System.out.println("Grade: 4");
+
+     }
+
+     else if (box < number_6) {
+
+        System.out.println("Grade: 5");
+
+     }
     }
 }
