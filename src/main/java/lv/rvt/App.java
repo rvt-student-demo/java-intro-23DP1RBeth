@@ -11,7 +11,7 @@ public class App
 
     // mana programma
 
-     System.out.println("uzraksti cik tev: ");
+     System.out.println("Give points [0-100]:");
      int box = Integer.valueOf(scanner.nextLine());
 
      if (box <= 49) {
