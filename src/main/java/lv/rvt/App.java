@@ -9,31 +9,27 @@ public class App
 
         Scanner scanner = new Scanner(System.in);
 
-    // mana programma
+    
+        public class App
+        {
+             public static void main(String []args)
+             {
+                
+                Scanner sc=new Scanner(System.in);
+               
+                System.out.println("Enter the number: ");
+                int num=sc.nextInt();
+                int i=1,fact=1;
+                while(i<=num)
+                {
+                    fact=fact*i;
+                    i++;
+                }
+                System.out.println("Factorial of the number: "+fact);  
 
-        System.out.print("Value of the gift? ");
-        int box = Integer.valueOf(scanner.nextLine());
+             }   
+        }
+    }}
 
-        double tax;
+        
 
-    if (box < 5000) {
-        System.out.println("No tax!");
-    } else if (box <= 25000) {
-        tax = 100 + (box - 5000) * 0.08;
-        System.out.printf("Tax: %.1f%n", tax);
-    } else if (box <= 55000) {
-        tax = 1700 + (box - 25000) * 0.10;
-        System.out.printf("Tax: %.1f%n", tax);
-    } else if (box <= 200000) {
-        tax = 4700 + (box - 55000) * 0.12;
-        System.out.printf("Tax: %.1f%n", tax);
-    } else if (box <= 1000000) {
-        tax = 22100 + (box - 200000) * 0.15;
-        System.out.printf("Tax: %.1f%n", tax);
-    } else {
-        tax = 142100 + (box - 1000000) * 0.17;
-        System.out.printf("Tax: %.1f%n", tax);
-    }
-
-}
-}
