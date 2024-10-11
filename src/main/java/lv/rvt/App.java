@@ -8,16 +8,24 @@ public class App
         // int value = Integer.valueOf(scanner.nextLine());
 
         Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("Give numbers: ");
 
+        System.out.println("Give numbers: ");
+        
+        int sum = 0;
+
+    
         while (true) {
+            
 
             int com = Integer.valueOf(scanner.nextLine());
+
+            sum += com;
     
             if (com == -1) {
     
                 System.out.println("Thx! Bye!");
+
+                System.out.println(sum);
 
         }
         }
