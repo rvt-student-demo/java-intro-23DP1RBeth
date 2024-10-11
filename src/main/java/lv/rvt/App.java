@@ -33,9 +33,9 @@ public class App
                 System.out.println("Average:" + average);   
 
                 if (kop % 2 == 0) {
-                    System.out.println(" is even." + kop);
+                    System.out.println("Even: " + kop);
                   } else {
-                    System.out.println(" is odd." + kop);
+                    System.out.println("Odd: " + kop);
                   }
 
                 break;
