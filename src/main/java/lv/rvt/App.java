@@ -8,26 +8,18 @@ public class App
         // int value = Integer.valueOf(scanner.nextLine());
 
         Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Give numbers: ");
 
+        while (true) {
+
+            int com = Integer.valueOf(scanner.nextLine());
     
-        public class App
-        {
-             public static void main(String []args)
-             {
-                
-                Scanner sc=new Scanner(System.in);
-               
-                System.out.println("Enter the number: ");
-                int num=sc.nextInt();
-                int i=1,fact=1;
-                while(i<=num)
-                {
-                    fact=fact*i;
-                    i++;
-                }
-                System.out.println("Factorial of the number: "+fact);  
+            if (com == -1) {
+    
+                System.out.println("Thx! Bye!");
 
-             }   
+        }
         }
     }}
 
