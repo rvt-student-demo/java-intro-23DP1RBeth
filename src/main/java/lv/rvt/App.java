@@ -32,8 +32,14 @@ public class App
 
                 System.out.println("Average:" + average);   
 
-                break;
+                if (kop % 2 == 0) {
+                    System.out.println(kop + " is even.");
+                  } else {
+                    System.out.println(kop + " is odd.");
+                  }
 
+                break;
+   
             }
 
             if(com >= 0) {
@@ -41,7 +47,6 @@ public class App
                 sum += com;
 
                 kop++;
-
             }
 
         }
