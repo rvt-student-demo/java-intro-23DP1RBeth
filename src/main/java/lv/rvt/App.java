@@ -2,28 +2,28 @@ package lv.rvt;
 
 public class App {
 
-    class Exercise5
-    {
-      public static void main ( String[] args )
-      {
-        int[] val = {0, 1, 2, 3}; 
-        int temp = val[0];
-     
-        System.out.println("Original Array: " 
-            + val[0] + " " + val[1] + " " + val[2] + " " + val[3]);
+  public static void main(String[] args) {
+
+    String[] words = {"sebastian", "lucac", "hanna", "gabriel"};
+    String[] years = {"2017", "2014", "2009"};
+
+    int sum = 0;
+    for (String year : years) {
+        sum += Integer.parseInt(year);
+    }
+    int averageYear = (int) sum / years.length;
+
+    String longestWord = "";
+    int maxLength = 0;
     
-        val[0] = val[3];
-        val[3] = temp;
-        
-        temp = val[1];
-        val[1] = val[2];
-        val[2] = temp;
-     
-        System.out.println("Reversed Array: " 
-            + val[0] + " " + val[1] + " " + val[2] + " " + val[3]);
-       }
+    for (String word : words) {
+        if (word.length() > maxLength) {
+            longestWord = word;
+            maxLength = word.length();
+        }
     }
     
-    }
-    
-    
+    System.out.println("The longest name: " + longestWord + " Average of the birth years: " + averageYear);
+
+  }
+}
