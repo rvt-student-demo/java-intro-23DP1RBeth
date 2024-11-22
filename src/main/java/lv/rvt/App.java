@@ -2,8 +2,18 @@ package lv.rvt;
 
 public class App {
   public static void main(String[] args) {
-      PaymentCard card = new PaymentCard(50);
-      System.out.println(card);
+      Timer timer = new Timer(); 
+
+      while (true) {
+          System.out.println(timer); 
+          timer.advance();          
+
+          try {
+              Thread.sleep(10);     
+          } catch (Exception e) {
+              System.out.println("Error: " + e.getMessage());
+          }
+      }
   }
 }
 
