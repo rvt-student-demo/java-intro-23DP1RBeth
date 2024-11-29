@@ -1,8 +1,10 @@
+
 package lv.rvt;
 
 public class HealthStation {
 
     private int weighingsCount; 
+
     public HealthStation() {
         this.weighingsCount = 0;
     }
@@ -13,10 +15,10 @@ public class HealthStation {
     }
 
     public void feed(Person person) {
-        person.setWeight(person.getWeight() + 1); 
+        person.setWeight(person.getWeight() + 1);
     }
 
     public int weighings() {
-        return this.weighingsCount; 
+        return this.weighingsCount;
     }
 }
