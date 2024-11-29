@@ -21,7 +21,8 @@ public class Product {
     public Product(String name, int weight) {
         this.name = name;
         this.location = "shelf";
-        this.weight = weight;
+        this.weight = weight
+        ;
     }
 
     @Override
