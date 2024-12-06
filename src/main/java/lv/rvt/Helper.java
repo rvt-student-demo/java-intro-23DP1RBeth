@@ -13,25 +13,18 @@ import java.nio.file.StandardOpenOption;
 public class Helper {
 
     public static BufferedReader getReader(String filename) throws IOException {
-
         return Files.newBufferedReader(getFilePath(filename));
-
     }
  
     public static BufferedWriter getWritter(String filename, StandardOpenOption option) throws IOException {
-
         return Files.newBufferedWriter(getFilePath(filename), option);
-        
+     
     }
 
     public static Path getFilePath(String filename) throws FileNotFoundException {
-
         Path filePath = Paths.get("data", filename);
-
         if (!Files.exists(filePath)) {
-
             throw new  FileNotFoundException("File not found: " + filename);
-
         }
 
         return filePath;
