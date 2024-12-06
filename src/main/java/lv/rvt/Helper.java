@@ -8,7 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-    
+
 
 public class Helper {
 
@@ -18,31 +18,24 @@ public class Helper {
 
     }
  
-    public static BufferedReader getWritter(String filename, StandardOpenOption option) throws IOException {
+    public static BufferedWriter getWritter(String filename, StandardOpenOption option) throws IOException {
 
-        return Files.newBufferedWritter(getFilePath(filename), option);
+        return Files.newBufferedWriter(getFilePath(filename), option);
         
     }
 
-    public static BufferedReader getFilePatch(String filename) throws FileNotFoundException {
+    public static Path getFilePath(String filename) throws FileNotFoundException {
 
-        Patch FilePatch = Patch.get("data", filename);
+        Path filePath = Paths.get("data", filename);
 
-        if (!Files.exists(FilePatch)) {
+        if (!Files.exists(filePath)) {
 
             throw new  FileNotFoundException("File not found: " + filename);
 
         }
 
-        return FilePatch;
+        return filePath;
 
     }
-
-}
-
-
-
-        
-    
 
 }
