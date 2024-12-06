@@ -1,36 +1,17 @@
 package lv.rvt;
 
+import java.io.BufferedReader;
+import java.util.Scanner;
+
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        Scanner Scanner =  new Scanner(System.in);
 
-        HealthStation childrensHospital = new HealthStation();
+        BufferedReader reader = Helper.getReader("persons.csv");
 
-        Person ethan = new Person("Ethan", 1, 110, 7);
-        Person peter = new Person("Peter", 33, 176, 85);
-
-        System.out.println(ethan.getName() + " weight: " + childrensHospital.weigh(ethan) + " kilos");
-        System.out.println(peter.getName() + " weight: " + childrensHospital.weigh(peter) + " kilos");
-
-        childrensHospital.feed(ethan);
-        childrensHospital.feed(ethan);
-        childrensHospital.feed(ethan);
-
-        System.out.println();
-        System.out.println(ethan.getName() + " weight: " + childrensHospital.weigh(ethan) + " kilos");
-        System.out.println(peter.getName() + " weight: " + childrensHospital.weigh(peter) + " kilos");
-
-        System.out.println();
-        System.out.println("weighings performed: " + childrensHospital.weighings());
-
-        childrensHospital.weigh(ethan);
-        childrensHospital.weigh(peter);
-        System.out.println("weighings performed: " + childrensHospital.weighings());
-
-        childrensHospital.weigh(ethan);
-        childrensHospital.weigh(ethan);
-        childrensHospital.weigh(ethan);
-        childrensHospital.weigh(ethan);
-
-        System.out.println("weighings performed: " + childrensHospital.weighings());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        
     }
 }
