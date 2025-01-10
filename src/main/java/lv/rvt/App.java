@@ -1,17 +1,7 @@
 package lv.rvt;
 
-import java.io.BufferedReader;
-import java.util.Scanner;
-
 public class App {
-    public static void main(String[] args) throws Exception {
-        Scanner Scanner =  new Scanner(System.in);
-
-        BufferedReader reader = Helper.getReader("persons.csv");
-
-        System.out.println(reader.readLine());
-        System.out.println(reader.readLine());
-        System.out.println(reader.readLine());
-        
+    public static void main(String[] args) {
+    
     }
 }
